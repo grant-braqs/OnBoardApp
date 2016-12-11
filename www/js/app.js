@@ -23,12 +23,15 @@ var percentApp = angular.module('starter', ['ionic', 'ngCordova'])
   });
 });
 
-percentApp.controller('perentApp', function($scope, $cordovaVibration) {
+percentApp.controller('perentApp', function($scope, $cordovaVibration, $http) {
 
   // Vibrate 100ms
   $cordovaVibration.vibrate(100);
 
+
+
 });
+
 
 
 
