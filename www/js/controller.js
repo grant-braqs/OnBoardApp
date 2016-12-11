@@ -15,6 +15,8 @@ angular.module('starter')
        var res = $scope.display.split("%");
        //Calculate Percent.
        $scope.display = ((res[0]/res[1]) * 100).toFixed(2);
+
+       //Calculate the time of calculation
        $scope.result = "";
        $http.get('http://date.jsontest.com/')
            .success(function(data, status, headers,config){
