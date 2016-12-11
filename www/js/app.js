@@ -28,10 +28,6 @@ percentApp.controller('perentApp', function($scope, $cordovaVibration, $http) {
   // Vibrate 100ms
   $cordovaVibration.vibrate(100);
 
-  $scope.showToast = function(message, duration, location) {
-      $cordovaToast.show(message, duration, locaton);
-  });
-
 
 });
 
